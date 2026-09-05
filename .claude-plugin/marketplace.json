@@ -1,0 +1,18 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "typo-fr",
+  "owner": { "name": "John Houzi", "url": "https://github.com/JohnJackHouzi" },
+  "metadata": {
+    "description": "French typography, enforced when writing and linted when reviewing.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "typo-fr",
+      "source": "./",
+      "description": "French typography that survives an AI: no em dashes, correct apostrophes, accented capitals, non-breaking spaces. Enforced by a linter that never touches your code.",
+      "category": "content",
+      "keywords": ["typography", "french", "linter", "content"]
+    }
+  ]
+}
