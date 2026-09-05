@@ -10,7 +10,22 @@ and a linter that fixes existing text without ever touching your code.
 /plugin install typo-fr@typo-fr
 ```
 
-> Type these in Claude Code, not in your shell.
+> Type these in Claude Code (the interface you get by running `claude`), not in
+> your shell. From a plain shell, the same thing is:
+>
+> ```
+> claude plugin marketplace add JohnJackHouzi/typo-fr
+> claude plugin install typo-fr@typo-fr
+> ```
+
+**What you get.** The `typo-fr` skill, which applies the rules to every French
+sentence the agent writes, and a `/typo` command to check or fix existing files.
+
+**Requirements.** Python 3.8+, standard library only. No pip install, no
+dependencies.
+
+**Without Claude Code.** The linter is a single file:
+`git clone https://github.com/JohnJackHouzi/typo-fr && python3 typo-fr/skills/typo-fr/scripts/typo_fr.py check mon-texte.md`
 
 ---
 
